@@ -184,3 +184,46 @@ input[type="password"]:focus {
         width: 90%;
     }
 }
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+input.invalid {
+    border-bottom: 2px solid red !important;
+    animation: shake 0.3s;
+}
+
+.login-box.shake {
+    animation: shake 0.4s;
+}
+
+/* OTP 模擬樣式（如你之後要加） */
+#otp-box {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#otp-box input {
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    display: block;
+}
+
+#otp-box button {
+    background-color: #00B900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
